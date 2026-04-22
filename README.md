@@ -1,10 +1,10 @@
 Cette repository est une application web simple permettant de soumettre des demandes de financement
 
-#Choix technique: Utilisation du framework; Symfony 7.4
-  ##Avantage symfony:
+# Choix technique: Utilisation du framework; Symfony 7.4
+  ## Avantage symfony:
 	  - Architecture propre (MVC: Model, View, Controller)
 	  - Symfony facilite la gestion des validations, erreurs
-  ##Améliorations possibles:
+  ## Améliorations possibles:
 	  - Mise en place d’un système d’authentification et de gestion des rôles
 	  - Ajout historique changement statut(date changement statut) et l'utilisateur ayant effectué l'action 
 	  - Tableau de bord pour voir le nb de demandes par statut

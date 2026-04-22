@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+{% for message in app.flashes('error') %}
+    <div style="color:red">
+        {{ message }}
+    </div>
+{% endfor %}
+<h2>Ajouter une demande de financement</h2>
+
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_widget(form) }}
+    {{ form_errors(form) }}
+
+{{ form_end(form) }}
+
+<hr>
+
+<table border="1px">
+    <tr>
+        <th>Matricule de l'entreprise</th>
+        <th>Nom de l'entreprise</th>
+        <th>Intitulé du projet</th>
+        <th>Montant demandé</th>
+        <th>Statut</th>
+        <th>Date de création</th>
+    </tr>
+    {% for demande in liste %}
+    <tr>
+        <td>{{ demande.matricule}}</td>
+        <td>{{ demande.nom }}</td>
+        <td>{{ demande.intitule }}</td>
+        <td>{{demande.montantDemande | number_format(0,'.',' ')}}</td>
+        <td>{{demande.statut}}</td>
+        <td>{{ demande.dateCreation|date('Y-m-d') }}</td>
+        <td><a href="{{ path('edit_demande_financement', {'id': demande.id}) }}">
+                Modifier
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

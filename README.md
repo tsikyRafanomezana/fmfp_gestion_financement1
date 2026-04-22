@@ -23,7 +23,7 @@ Assurez-vous d’avoir installé :
 
 ## Cloner le projet
 
-git clone https://github.com/tsikyRafanomezana/fmfp_gestion_financement1.git
+git clone https://github.com/tsikyRafanomezana/fmfp_gestion_financement1.git 
 cd fmfp_gestion_financement1
 
 

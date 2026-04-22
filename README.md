@@ -1,4 +1,5 @@
-Cette repository est une application web simple permettant de soumettre des demandes de financement
+# Contexte du projet 
+Cette repository est une application web simple permettant de soumettre des demandes de financement pour FMFP
 
 # Choix technique: Utilisation du framework; Symfony 7.4
   ## Avantage symfony:
